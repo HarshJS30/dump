@@ -20,7 +20,7 @@ export function Post() {
                 e.preventDefault();
                 const content = editor.getHTML(); // Get the HTML content
 
-                const res = await fetch("http://localhost:3000/post", {
+                const res = await fetch("https://dump-gkh9.onrender.com/post", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"

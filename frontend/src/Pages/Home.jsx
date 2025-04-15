@@ -6,7 +6,7 @@ export function Home(){
     
     const [dumps,setDumps] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:3000/post")
+        fetch("https://dump-gkh9.onrender.com/post")
             .then((res)=>res.json())
             .then((data)=>setDumps(data.data))
             .catch((err)=>console.error("Fetch error:",err))

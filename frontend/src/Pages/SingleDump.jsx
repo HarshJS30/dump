@@ -8,7 +8,7 @@ export function SinglePost() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/post/${id}`)
+        fetch(`https://dump-gkh9.onrender.com/post/${id}`)
             .then(res => res.json())
             .then(data => {
                 setPost(data);
