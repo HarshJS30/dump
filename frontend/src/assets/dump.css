@@ -1,0 +1,298 @@
+/* Your existing CSS */
+body {
+  font-family: 'Inter', serif;
+}
+
+*{
+    background-color: #000;
+    color: #fff;
+}
+.struct, .create{
+  padding-top: 2rem;
+  padding-left: 10rem;
+}
+.struct h1{
+  margin-bottom: 5rem;
+  font-size: 48px;
+  font-weight: 800;
+}
+.struct span{
+  font-family: "Instrument Serif",sans-serif;
+  font-weight: 10;
+  font-style: italic;
+  color: #b33939;
+}
+.arrow{
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 10;
+}
+.struct h4{
+  font-size: 20px;
+  font-weight: 300;
+}
+.struct a{
+  text-decoration: none !important;
+}
+.tiptap{
+  border: 1px solid #fff;
+  min-height: 15rem;
+  height: max-content;
+  padding: 1rem;
+}
+.container{
+  border: 1px solid #fff;
+  width: 60%;
+  font-family: 'Inter',sans-serif;
+}
+.toolbar button{
+  background-color: transparent;
+  font-family: 'Inter',sans-serif;
+  border: none;
+  margin-right: 2rem;
+  position: relative;
+  left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.toolbar button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.bold{
+  font-weight: 800;
+  top: 0.5rem;
+}
+.italic{
+  font-style: italic;
+  font-weight: 300;
+  top: 0.5rem;
+}
+.strike{
+  text-decoration: line-through;
+  font-weight: 400;
+  top: 0.5rem;
+}
+.bullet{
+  font-size: 16px;
+  top: 0.7rem;
+}
+.create input{
+  background-color: none ;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  width: 58.5%;
+  min-height: 3rem;
+  height: max-content;
+}
+input::placeholder{
+  color: #fff;
+  font-family: 'Inter',sans-serif;
+  position: relative;
+  left: 10px;
+}
+.submit{
+  background-color: #2ecc71;
+  border: none;
+  font-family: 'Inter',sans-serif;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  width: 9rem;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  left: 23%;
+}
+.submit:hover {
+  background-color: #27ae60;
+  cursor: pointer;
+}
+.create input,
+.tiptap {
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+.single-post{
+  padding-top: 5rem;
+  padding-left: 10rem;
+}
+.single-post h1{
+  font-size: 65px;
+}
+.line{
+  width: 70%;
+  position: relative;
+  left: -11rem;
+  margin-bottom: 3rem;
+}
+
+/* Media Queries */
+/* Large Devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .struct, .create, .single-post {
+    padding-left: 6rem;
+  }
+  
+  .container {
+    width: 70%;
+  }
+  
+  .create input {
+    width: 68.5%;
+  }
+  
+  .submit {
+    left: 20%;
+  }
+  
+  .line {
+    width: 80%;
+    left: -7rem;
+  }
+  
+  .single-post h1 {
+    font-size: 55px;
+  }
+}
+
+/* Medium Devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .struct, .create, .single-post {
+    padding-left: 3rem;
+  }
+  
+  .struct h1 {
+    font-size: 40px;
+    margin-bottom: 3rem;
+  }
+  
+  .container {
+    width: 80%;
+  }
+  
+  .create input {
+    width: 78.5%;
+  }
+  
+  .toolbar button {
+    margin-right: 1.5rem;
+  }
+  
+  .submit {
+    left: 15%;
+  }
+  
+  .line {
+    width: 90%;
+    left: -3rem;
+  }
+  
+  .single-post h1 {
+    font-size: 45px;
+  }
+}
+
+/* Small Devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .struct, .create, .single-post {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .struct h1 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+  
+  .struct h4 {
+    font-size: 18px;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .create input {
+    width: 93.5%;
+  }
+  
+  .toolbar button {
+    margin-right: 1rem;
+    font-size: 14px;
+  }
+  
+  .submit {
+    left: 0;
+    margin-left: 0;
+    width: 8rem;
+  }
+  
+  .line {
+    width: 100%;
+    left: -2rem;
+  }
+  
+  .single-post h1 {
+    font-size: 36px;
+  }
+}
+
+/* Extra Small Devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .struct, .create, .single-post {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+  }
+  
+  .struct h1 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .struct h4 {
+    font-size: 16px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .create input {
+    width: 98%;
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .toolbar button {
+    margin-right: 0.5rem;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tiptap {
+    min-height: 12rem;
+  }
+  
+  .submit {
+    left: 0;
+    width: 7rem;
+    font-size: 14px;
+    display: block;
+    margin: 1.5rem auto 0;
+  }
+  
+  .line {
+    width: 100%;
+    left: -1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .single-post h1 {
+    font-size: 30px;
+  }
+}
