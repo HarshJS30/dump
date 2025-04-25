@@ -115,6 +115,8 @@ input::placeholder{
 .single-post{
   padding-top: 5rem;
   padding-left: 10rem;
+  height: max-content;
+  width: 70%;
 }
 .single-post h1{
   font-size: 65px;
