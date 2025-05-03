@@ -124,7 +124,7 @@ input::placeholder{
 .line{
   width: 70%;
   position: relative;
-  left: -11rem;
+  left: -8rem;
   margin-bottom: 3rem;
 }
 
@@ -290,11 +290,14 @@ input::placeholder{
   
   .line {
     width: 100%;
-    left: -1rem;
+    left: 0rem;
     margin-bottom: 2rem;
   }
   
   .single-post h1 {
     font-size: 30px;
+  }
+  .single-post{
+    width: 85%;
   }
 }
