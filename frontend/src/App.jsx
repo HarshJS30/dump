@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { Post } from "./Pages/CreatePost";
 import { SinglePost } from "./Pages/SingleDump";
-import './app.css';
+import './App.css';
 function App(){
   return(
     <BrowserRouter>
